@@ -61,7 +61,7 @@ class User(AbstractBaseUser):
         return True
 
     # Does the user have permission to view app_label
-    def has_module_perm(self, app_label):
+    def has_module_perms(self, app_label):
         return True
 
     # Is the user is admin
